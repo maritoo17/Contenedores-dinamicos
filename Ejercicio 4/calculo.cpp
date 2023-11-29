@@ -1,6 +1,5 @@
 #include <iostream>
 #include <valarray>
-#include <algorithm>
 
 int main() {
     std::valarray<double> numeros (4);
