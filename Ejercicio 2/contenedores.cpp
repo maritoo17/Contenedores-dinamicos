@@ -19,6 +19,14 @@ int main(){
     pila.push(6.7);
 
     cout << "Elemento en la cima después de push: " << pila.top() << endl;
+
+    pila.pop();
+    pila.pop();
+    pila.pop();
+    pila.pop();
+    pila.pop();
+
+    cout << (pila.empty() ? "Pila vacía después de pop" : "Pila no vacía después de pop") << endl;
 }
 
 
