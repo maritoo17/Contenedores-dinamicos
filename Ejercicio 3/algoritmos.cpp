@@ -14,4 +14,6 @@ int main(){
 
     sort(numeros.begin(), numeros.end());
 
+    auto maximo = std::max_element(numeros.begin(), numeros.end());
+
 }
