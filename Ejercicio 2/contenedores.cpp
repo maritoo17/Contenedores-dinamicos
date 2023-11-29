@@ -4,9 +4,21 @@
 
 using namespace std;
 
-list<double> numeros = {1.7, 2.5, 3.1, 4.9};
-stack<double, list<double>> pila(numeros);
+int main(){
+    list<double> numeros;
+    numeros.push_back(1.7);
+    numeros.push_back(2.5);
+    numeros.push_back(3.1);
+    numeros.push_back(4.9);
 
-std::cout << "Elemento en la cima: " << pila.top() << std::endl;
+    stack<double, list<double> > pila(numeros);
+
+    cout << "Elemento en la cima: " << pila.top() << endl;
+
+    pila.push(5.3);
+    pila.push(6.7);
+
+    cout << "Elemento en la cima después de push: " << pila.top() << endl;
+}
 
 
