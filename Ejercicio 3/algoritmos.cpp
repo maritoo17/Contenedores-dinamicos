@@ -16,4 +16,9 @@ int main(){
 
     auto maximo = std::max_element(numeros.begin(), numeros.end());
 
+    std::cout << "Vector ordenado: ";
+    for (int num : numeros) {
+        std::cout << num << " ";
+    }
+    std::cout << "\nElemento más grande: " << *maximo << std::endl;
 }
