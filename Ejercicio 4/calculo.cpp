@@ -1,19 +1,18 @@
 #include <iostream>
 #include <valarray>
+#include <algorithm>
 
-using namespace std;
+int main() {
+    std::valarray<double> numeros (4);
+    numeros[0] = 1.7;
+    numeros[1] = 2.5;
+    numeros[2] = 3.1;
+    numeros[3] = 4.9;
 
-int main (){
-    valarray<double> numeros;
-    numeros[0]= 1.7;
-    numeros[1]= 2.5;
-    numeros[2]= 3.1;
-    numeros[3]= 4.9;
-
-    valarray<double> suma = numeros + 2.0;
-    valarray<double> resta = numeros - 1.0;
-    valarray<double> multiplicacion = numeros * 3.0;
-    valarray<double> division = numeros / 2.0;
+    std::valarray<double> suma = numeros + 2.0;
+    std::valarray<double> resta = numeros - 1.0;
+    std::valarray<double> multiplicacion = numeros * 3.0;
+    std::valarray<double> division = numeros / 2.0;
 
     std::cout << "Valores originales: ";
     for (double num : numeros) {
